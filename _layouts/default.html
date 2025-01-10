@@ -18,8 +18,9 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="https://linkedin.com/in/shekhar-naik-sn7" class="btn">LinkedIn</a>
-      <a href="https://github.com/Shekhar-N" class="btn">GitHub</a>
+      <a href={{ site.social.linkedin }} class="btn">LinkedIn</a>
+      <a href={{ site.social.github }} class="btn">GitHub</a>
+      <a href={{ site.social.twitter }} class="btn">Twitter</a>
     </header>
 
     <main id="content" class="main-content" role="main">
