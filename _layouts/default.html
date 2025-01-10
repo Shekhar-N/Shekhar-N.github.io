@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-  <head>
+  <!-- <head>
     <meta charset="UTF-8">
 
 {% seo %}
@@ -11,6 +11,22 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+  </head> -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Background Image</title>
+    <style>
+      header {
+        background-image: url('images/header-bg.jpg');
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+    </style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -19,7 +35,7 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       <a href="https://github.com/Shekhar-N" style="display: inline-block;">
-        <img src="/assets/img/img.jpg" alt="View My Portfolio" style="width: 200px; height: auto; border-radius: 10px;">
+        <img src="/assets/img/img.jpg" alt="View My Portfolio" style="width: 200px; height: auto; border-radius: 10px; ">
       </a>
       <a href={{ site.social.linkedin }} class="btn">LinkedIn</a>
       <a href={{ site.social.github }} class="btn">GitHub</a>
