@@ -18,7 +18,7 @@
     <title>Header with Background Image</title>
     <style>
       header {
-        background-image: url('images/header-bg.jpg');
+        background-image: url('/assets/img/img.jpg');
         height: 300px;
         background-size: cover;
         background-position: center;
@@ -34,9 +34,9 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="https://github.com/Shekhar-N" style="display: inline-block;">
+      <!-- <a href="https://github.com/Shekhar-N" style="display: inline-block;">
         <img src="/assets/img/img.jpg" alt="View My Portfolio" style="width: 200px; height: auto; border-radius: 10px; ">
-      </a>
+      </a> -->
       <a href={{ site.social.linkedin }} class="btn">LinkedIn</a>
       <a href={{ site.social.github }} class="btn">GitHub</a>
       <a href={{ site.social.twitter }} class="btn">Twitter</a>
