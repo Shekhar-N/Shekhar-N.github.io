@@ -1,5 +1,6 @@
 title: Shekhar Naik
 description: Experienced Data Engineer | Driving Scalable Data Solutions
-show_downloads: true
+show_downloads: false
+is_project_page: true
 google_analytics:
 theme: jekyll-theme-cayman
